@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>519358304243-c31o7qi8thk3nknifhl5kdnopp9j092i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.519358304243-c31o7qi8thk3nknifhl5kdnopp9j092i</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>519358304243-2bi9pd8feuiqteu3v9jbvnl0tqods36f.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDUI0F9oTBodq9DfdvTI-ge4_RuJLxafLU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>519358304243</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.punjabitok</string>
+	<key>PROJECT_ID</key>
+	<string>punjabitok-3cb91</string>
+	<key>STORAGE_BUCKET</key>
+	<string>punjabitok-3cb91.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:519358304243:ios:71319926db3c794722cc86</string>
+	<key>DATABASE_URL</key>
+	<string>https://punjabitok-3cb91.firebaseio.com</string>
+</dict>
+</plist>

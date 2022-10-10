@@ -1,0 +1,6 @@
+framework module Pods_PunjabiTok_PunjabiTokUITests {
+  umbrella header "Pods-PunjabiTok-PunjabiTokUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

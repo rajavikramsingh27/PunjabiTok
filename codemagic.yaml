@@ -1,0 +1,198 @@
+workflows:
+    ios-Development-Automatic:
+      name: Automatic Provisioning Certificates
+      environment:
+        vars:
+          XCODE_WORKSPACE: "PunjabiTok.xcworkspace"
+          XCODE_SCHEME: "PunjabiTok"
+          BUNDLE_ID: "com.punjabitok"
+          APP_STORE_CONNECT_ISSUER_ID: Encrypted(Z0FBQUFBQmhBU1NSbTRSQWlYQXRYQ0FOZ1lDazd2UWN5dXRRaU9EQ2ZpbFNFcFc5Ym5hcXM2SjI2M2pZall0bEFicW5sbEh0TFRlbTlQX0Zqck9yWDFUaTVSeGN1dkhxMm5lNXJOSzJUc2FWUTZvOWRrMUNBQURiN2dEMElPYVJWam1MTVpYYmhPdG0=)
+          APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(Z0FBQUFBQmhBU1MtaXM3eXluTTJObm1OZ0IxRDNkcmZZV2V6cFlhTXVwVVhKOHU0VzlnNXRWcGdqOV9WQURzYUFZTlRZVU5KeWZidEJwWXpHc0lFRjBZdnlzOFItRTJXSkE9PQ==)
+          APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(Z0FBQUFBQmhBU2F0cVUwRlFHNWVMS1VFVTk0aE5SaWU4dTVzYVZjQUhwRmM0eGJBR0FNSWp6QWdXYTJSYVpNYW14Z21CbUVxVkRULXRGWFExQzZxelJHX3FwdTJ1NkMzRkZGejV6VW5hMFpJTEwyUmdaMlREV0tvWjBnYVJQTU1teFpqWE5RRTFFOE1YNzdfd1JUZmFkRnQ0MEt6bHlPRFRxODlITjg5NHVMc1BhdnZGYTRDYnlleWNlWkRGUklXbTdsUUpScWNWUEF6cFhEN3RnNXpYalRHUVIwbXB4UGEwRXljV1RhaGFQOXVORWtDbDVCWHFLMWctcUxSNEVRaTNSVzFfZVNDYWhyWDlaS25TZFdGX182VnRPZFVjcEZJWDVoRHpjYUUtU2k0bnp4M2hJbTVDRXdScXNoZjJmVUQyeEwzQXBpc2tIZ2w5N284QUtYY3dmU0VGSGRjYlRqWUtBNG9tYjVwNDFEMHY3Unp6WW5JaUlLSEUzVkZRSmx0emdWa1JKTDhGUXY0bGpfYUQ1RWxoa1lQOWZXVUZ3YVd6WnpkdUFhUVh6alMwZ1EzVTNpb094Zz0=)
+          CERTIFICATE_PRIVATE_KEY: Encrypted(Z0FBQUFBQmhBU2VmMG5ZUk1VS2xSOXByc19ZaWRJUi1ybWpySkVkU0hSd3V4VGUyclV3ay0xdXdyZDlnclFRUUw2SWpEQ1kyRFhTaFZBTVlBdDNxS1dQZU1adnQ4OVdaRUlHU1U0b1AyUnItdTV2UnJmc1BUaVloTFNZRlpqVE5yNy04TjZyYTRzWTJRZmlSZ1Uzc3BWY044bmctR2tNWnhKeDRaaDFfbV9KU05jX2g4QUNhV0QtRWoxbVhCV0ZFalRJbEh5Zjl0QXhDU3NuOC1ZSDM0eUZldlpjcTlwQjRsSjJVc2N0eGZVTmVzREFNbzIxY0M3RlpCaVBRNldzVFVaSUdGcVIyMUI2UmN4ekhiaDh3NkMtWkpOUjZlS0U5c1NzUnQtWWxDcXV6dEVVcV9ha291NVo5R1RiREZONHlLSG01MndrYTFrSUdFR195QTVuOGltUDd0WU5CTFBySFBxbXFMSWlhWGVXRjBGUUdiSTM1S0hfNDBWZ1UyYjJKUXhZcGlrZU5rbjlubTVtYnktMXJDQkpCWnY4dk9CQ01vTkNhSTBBeS1CVHJVR3lhWjkxYlEtM1drU004Q25paXZwV3BEeGxQNnNheFV3UnRvY2dmdkhNTEtxYnFQeW1ZT1JjUi1CNlFoanJ1QzM4cVN4a191c0V0cXRJNnNnZFR4N3Fkbl9ER0llN0tldWRQU2lBZGtkS3o0SnpDV3VabWtabUxhck55WHBXUndMME5SY0pZR2dqUEkwQUoycDRmOEZ3Mi1RaFI2SnVLZDB1RFNWOHNzNXVTUUROZ2xmSzlBSnpaX0ppN1dVNER0bEdqTnA2X3EtN0RSa0V1NjlmVXBNRWNSUGQtcjAyLUJCb0hzazl6QUhGUERnVlpfSk4tVUE1OEtTOEQxYVNYMFVDRlBWQTVEY09VdHRXQ1VXU0RmMlZjODRvUWU5VHAyS1JmMUpOalV2Q2M2UkM3d0Z2NFBRdkpPbjFpM0lyRG9JN3Y3X1kwSEQxNk44alRUeU5vRnBmOVNTaHA0QlhYbVZqWFJNNkJhUUkwcFJ5dm80ODR2UUZSMDA5Y3VpVU16NHhBaldIcGdRMDFrbFJnaU9UNTJxLTJwS2l6NUkwQ3ZFMVVBWmtJOVAtSVdBMmNTRUNzNXlJLTZ2MnpNeVVvSDBUT1hTWklRTjlGMlUxcUhWVVFuVEFCN3ZxU3Q0NVdjMDFfZnRNOUtmVUlwYks4SHhPc1F2ZHh4TkJrVC1BTUpKQmJYUTE3ajJkaXVnQzZQX0NmbWxFVi1jY3NScWpRRTdRVUhyazBnUVl3S0NSQzZDaU1kME56WFZVWUFPX3NDTHZ1RVRyT1BmVWxQVmpVVGxWNUNRbHFIT1ZQWFNmOWo0UzVhZ0lDVVdRWUZSMkY0Nklyb0c3a0x6ZzJrMUN6UXNBMXp6ZWVJR281dElVaG9hSUx3aTNSY19fTE9KdEo1SGEzT09lTXB1V2pQWEVwYUtGLW1jT3hhOWdEQnZXU3JCc1UySHlhclBYNWc4RUpMb2lwTlNndWZxM2JVdzhCRXRIRzlUVmtSQXEwNnctb1U1ZmM3amltdGJVWlA3SnVfSXV3LWF6WjhveDJ5d255ZHFyUks0cHExTVV2MHlOU24xY0pOaWRIdHUwb3MycDd6eFdRWVNGN212U2I1S0dnRmFZdy1xckNqVHNtN3kyOXc5VEpMM3BXd0tMWkVqVnQwejBjY0lNcF9DeHpkNHhzZ0RiUTZpMi1Bc2dvajMteE5Vc2JvYU9kRDVVcWtCeXMtS19aZ1NLazFuWnRoODhoSGlBLUtiQ3UxRkJBU2NoRE5OOExwdkk5aU9hTjZUQS1ERkZ6YTJ1WlFuTThlYVVEc2NLS3hLTmVUWGpjV3VXd3lxNEpoUFBHS25tOHMyQ2NIb2E4cGNnX2FYRVFyMjRkQi14a2lHQS1xUU1nUklNdzBoQTNVelprOWFQa09SMXNETldXUzF4TmJsOWZ0VHNXMTVoZFQ2MlBpTllWQnMyVlp3MjRyb000cjEtU1N0cmFXVTgtbWZfVFc1YXMxZ1JoVlo3VmxXZjdmZUlBMDdudWI3YzRXdlJJYXhyOGJZSmlkOVNKQkRUT0p4UXVBcEVzTWpuSGpIdVpIYnZSUk1tRkgwV3Q3dkZBTkhtTnNzZG1pdmtWYVk4R240WjdSMVlZbzViUDZHVFJLTHZJRWRaaWFjUkNCTncwT0NPSmY5UE5SNjk2US1aeV84OGU5VkhzVkk3bUttZmx6aFJ3cW8zdVZfT3R1V3UxRXRGY0VOS2ZsNTFBODh1clFsMm1rYkZFVEFxaVlpNlROeHJ4a0RRVTVQcWxyZ1M2aERqT0V5aXd6WVdXSzhudzdXakVjeWdQUWZHX2Zwem1Na25ncHMteGxoM2xaZ2Q4a3FzRkdTUE9vOWp4bk1MZmYyNllrS01tVXo4dlRhNElieFc4UXNEbHA1TzlvNkk5YnZaR25LcjdDUW1Wckp1d1QxNXdHODhTbG1weW0zSGVFSkJuTWFraTdRNHFnazVCX3pkTkFEbXRDRTluN1V1UjZITFZLRjJKWmh6dVlweHFBdlRFVF9CSmxER3FENUFSUktoSklkcjJ5Mjc2b1N3RG0xMjBUWHBjQTdFY253YzdwMkY3bm5INTVuczZSeG50M19wVGNESE1jenVVM0Voc1BnMlh3RFI5aVNDblQ5WVRhLUJlbUZCNlVrRkRmZDNqRVRwUDN3OG9EaWRTZ3FnN05rZEpqSVZmWW9HMF9ZVGdFY1ROYnJOYndQanBJUjZJemlNaDNzM3c3WTdtdmxES2tIZ3ZCU0Y5MGxHNl9aQmthZlZPRTIybVZabVhXWFUzdldVOWJ1bkRuNkRZVDNfQ0Q2WkZIdHVMV3M4UFdpSV8tUzYtQUZrV21HQnpfN3Q0eVhyd29SX1psd3J1bXJpYnRZVEFtM1VaS3FfSjk5bDJIWkdoWTB0SmMycjJZNDd2aFhUb1pQU2U0b3lNUjZGTmlDV1J4NXFqQjVzRzZHZU82QThfVlhELXdRZ3hiMUo1TUJhTS14WGg3Yy03dGxwWWpqRGVWUzBS)
+        xcode: 13.0 #latest #12.4
+        cocoapods: default
+      triggering:
+        events:
+          - push
+          - tag
+          - pull_request
+        branch_patterns:
+          - pattern: 'master'
+            include: true
+            source: true
+      scripts:
+        - name: Install pods
+          script: |
+            pod install
+        - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
+          script: |
+            keychain initialize
+        - name: Fetch signing files
+          script: |
+            app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
+        - name: Use system default keychain
+          script: |
+            keychain add-certificates
+        - name: Set up code signing settings on Xcode project
+          script: |
+            xcode-project use-profiles
+        - name: Increment build number
+          script: |
+            #!/bin/sh
+            set -ex
+            agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APP_ID") + 1))
+        - name: Build ipa for distribution
+          script: |
+            xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
+      artifacts:
+        - build/ios/ipa/*.ipa
+        - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+      publishing:
+        email:
+            recipients:
+              - rajavikramsingh27@gmail.com
+            notify:
+              success: true
+              failure: true
+        slack:
+            channel: '#builds-debug'
+            notify_on_build_start: true    # To receive a notification when a build starts
+            notify:
+              success: true               # To not receive a notification when a build succeeds
+              failure: true
+
+    ios-Development-Manual:
+      name: Manual Provisioning Certificates
+      environment:
+        vars:
+          XCODE_WORKSPACE: "PunjabiTok.xcworkspace" # <-- Put the name of your workspace here.
+          XCODE_SCHEME: "PunjabiTok" # <-- Put the name of your scheme here.
+          # Set up env vars for manual codesigning (See - https://docs.codemagic.io/code-signing-yaml/signing-ios/)
+          CM_CERTIFICATE: Encrypted(Z0FBQUFBQmhCQlNLdV95enlaeEdCU3pGclVyczdUT1J1UzE2SWpsX0hIR3RfdEp1OThLM2Z6RnBXa2hISl9RT1JIVXVWVWxoM2NCNGZhYTg2WUZ4d041V0J1YVVPdGdHaUxzNkN6Wmt5WlN6QWUxUTB3bnFxVWpENUczOGtFS2R1SlFWbnBfSndTYnZDNTJvRXludDNsc3JvbEt6aUdhYzZtZ3g1d3JrR0lLZlNWcUxmcUNNZzJ5bF9fbDJmbGs1UVdfdFdzdDJPRkZH)
+          CM_CERTIFICATE_PASSWORD: Encrypted(Z0FBQUFBQmhCQktMWk0zUVhnb0JscVo5TFRVNHJqNEF6RzN2UzhlVGhoc3BZQS1yektueDg0R2RCcDlwYi1fQXJSMjhBVlZObmNCWjBBWFBmN0VIZ20yVEg5dk1XUEx5dGc9PQ==)
+          CM_PROVISIONING_PROFILE: Encrypted(Z0FBQUFBQmhCQmxTV3Q1VUl3MlBuLXlGeUhWcXNaaE5xVjBVYkFSWXBmS0RTTWN4WE4xOXBLUWk2dDhnN3ZhaHFpWDVDTWo4LWpYUVRLVmtWODFZbkJsRnRSdHNaZFJnODJ0UVpmeXZmMUphbGtqOTNMVXJCb0FLbks0Y1RFRXI4alQtSjlPSTRuamR1c1R1cmJJVWtURnI3T3VPWURIc0FZY1hoc1pFZWxMRlhiTVR0RlFQMzBRampGa2loMkRpX0hDT0Rtak9NekFfVHdQWFZkTlNPUGpVSmRNVVhjemZUZz09)
+        xcode: latest
+        cocoapods: default
+      triggering:
+        events:
+          - push
+          - tag
+          - pull_request
+        branch_patterns:
+          - pattern: 'master'
+            include: true
+            source: true
+      scripts:
+        - name: Initialize keychain to be used for codesigning using Codemagic CLI 'keychain' command
+          script: |
+            keychain initialize
+        - name: set up provisioning profiles
+          script: |
+            PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
+            mkdir -p "$PROFILES_HOME"
+            PROFILE_PATH="$(mktemp "$PROFILES_HOME"/$(uuidgen).mobileprovision)"
+            echo ${CM_PROVISIONING_PROFILE} | base64 --decode > $PROFILE_PATH
+            echo "Saved provisioning profile $PROFILE_PATH"
+        - name: Add signing certificate to keychain
+          script: |
+            echo $CM_CERTIFICATE | base64 --decode > /tmp/certificate.p12
+            keychain add-certificates --certificate /tmp/certificate.p12 --certificate-password $CM_CERTIFICATE_PASSWORD
+        - name: Increment build number
+          script: |
+            # increment build number
+            #!/bin/sh
+            set -e
+            set -x
+            cd $FCI_BUILD_DIR
+            agvtool new-version -all $(($BUILD_NUMBER +1))
+        - name: Set up code signing settings on Xcode project
+          script: |
+            xcode-project use-profiles
+        - name: Build .ipa
+          script: |
+            xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
+      artifacts:
+        - build/ios/ipa/*.ipa
+        - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+      publishing:
+        email:
+            recipients:
+              - user1@example.com
+              - user2@example.com
+            notify:
+              success: true
+              failure: true
+        slack:
+            channel: '#builds-debug'
+            notify_on_build_start: true    # To receive a notification when a build starts
+            notify:
+                success: true               # To not receive a notification when a build succeeds
+                failure: true
+    
+    ios-AppStore-Automatic:
+      name: AppStore Automatic Provisioning
+      environment:
+        vars:
+          XCODE_WORKSPACE: "PunjabiTok.xcworkspace"
+          XCODE_SCHEME: "PunjabiTok"
+          BUNDLE_ID: "com.punjabitok"
+          APP_STORE_CONNECT_ISSUER_ID: Encrypted(Z0FBQUFBQmhBU1NSbTRSQWlYQXRYQ0FOZ1lDazd2UWN5dXRRaU9EQ2ZpbFNFcFc5Ym5hcXM2SjI2M2pZall0bEFicW5sbEh0TFRlbTlQX0Zqck9yWDFUaTVSeGN1dkhxMm5lNXJOSzJUc2FWUTZvOWRrMUNBQURiN2dEMElPYVJWam1MTVpYYmhPdG0=)
+          APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(Z0FBQUFBQmhBU1MtaXM3eXluTTJObm1OZ0IxRDNkcmZZV2V6cFlhTXVwVVhKOHU0VzlnNXRWcGdqOV9WQURzYUFZTlRZVU5KeWZidEJwWXpHc0lFRjBZdnlzOFItRTJXSkE9PQ==)
+          APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(Z0FBQUFBQmhBU2F0cVUwRlFHNWVMS1VFVTk0aE5SaWU4dTVzYVZjQUhwRmM0eGJBR0FNSWp6QWdXYTJSYVpNYW14Z21CbUVxVkRULXRGWFExQzZxelJHX3FwdTJ1NkMzRkZGejV6VW5hMFpJTEwyUmdaMlREV0tvWjBnYVJQTU1teFpqWE5RRTFFOE1YNzdfd1JUZmFkRnQ0MEt6bHlPRFRxODlITjg5NHVMc1BhdnZGYTRDYnlleWNlWkRGUklXbTdsUUpScWNWUEF6cFhEN3RnNXpYalRHUVIwbXB4UGEwRXljV1RhaGFQOXVORWtDbDVCWHFLMWctcUxSNEVRaTNSVzFfZVNDYWhyWDlaS25TZFdGX182VnRPZFVjcEZJWDVoRHpjYUUtU2k0bnp4M2hJbTVDRXdScXNoZjJmVUQyeEwzQXBpc2tIZ2w5N284QUtYY3dmU0VGSGRjYlRqWUtBNG9tYjVwNDFEMHY3Unp6WW5JaUlLSEUzVkZRSmx0emdWa1JKTDhGUXY0bGpfYUQ1RWxoa1lQOWZXVUZ3YVd6WnpkdUFhUVh6alMwZ1EzVTNpb094Zz0=)
+          CERTIFICATE_PRIVATE_KEY: Encrypted(Z0FBQUFBQmhBU2VmMG5ZUk1VS2xSOXByc19ZaWRJUi1ybWpySkVkU0hSd3V4VGUyclV3ay0xdXdyZDlnclFRUUw2SWpEQ1kyRFhTaFZBTVlBdDNxS1dQZU1adnQ4OVdaRUlHU1U0b1AyUnItdTV2UnJmc1BUaVloTFNZRlpqVE5yNy04TjZyYTRzWTJRZmlSZ1Uzc3BWY044bmctR2tNWnhKeDRaaDFfbV9KU05jX2g4QUNhV0QtRWoxbVhCV0ZFalRJbEh5Zjl0QXhDU3NuOC1ZSDM0eUZldlpjcTlwQjRsSjJVc2N0eGZVTmVzREFNbzIxY0M3RlpCaVBRNldzVFVaSUdGcVIyMUI2UmN4ekhiaDh3NkMtWkpOUjZlS0U5c1NzUnQtWWxDcXV6dEVVcV9ha291NVo5R1RiREZONHlLSG01MndrYTFrSUdFR195QTVuOGltUDd0WU5CTFBySFBxbXFMSWlhWGVXRjBGUUdiSTM1S0hfNDBWZ1UyYjJKUXhZcGlrZU5rbjlubTVtYnktMXJDQkpCWnY4dk9CQ01vTkNhSTBBeS1CVHJVR3lhWjkxYlEtM1drU004Q25paXZwV3BEeGxQNnNheFV3UnRvY2dmdkhNTEtxYnFQeW1ZT1JjUi1CNlFoanJ1QzM4cVN4a191c0V0cXRJNnNnZFR4N3Fkbl9ER0llN0tldWRQU2lBZGtkS3o0SnpDV3VabWtabUxhck55WHBXUndMME5SY0pZR2dqUEkwQUoycDRmOEZ3Mi1RaFI2SnVLZDB1RFNWOHNzNXVTUUROZ2xmSzlBSnpaX0ppN1dVNER0bEdqTnA2X3EtN0RSa0V1NjlmVXBNRWNSUGQtcjAyLUJCb0hzazl6QUhGUERnVlpfSk4tVUE1OEtTOEQxYVNYMFVDRlBWQTVEY09VdHRXQ1VXU0RmMlZjODRvUWU5VHAyS1JmMUpOalV2Q2M2UkM3d0Z2NFBRdkpPbjFpM0lyRG9JN3Y3X1kwSEQxNk44alRUeU5vRnBmOVNTaHA0QlhYbVZqWFJNNkJhUUkwcFJ5dm80ODR2UUZSMDA5Y3VpVU16NHhBaldIcGdRMDFrbFJnaU9UNTJxLTJwS2l6NUkwQ3ZFMVVBWmtJOVAtSVdBMmNTRUNzNXlJLTZ2MnpNeVVvSDBUT1hTWklRTjlGMlUxcUhWVVFuVEFCN3ZxU3Q0NVdjMDFfZnRNOUtmVUlwYks4SHhPc1F2ZHh4TkJrVC1BTUpKQmJYUTE3ajJkaXVnQzZQX0NmbWxFVi1jY3NScWpRRTdRVUhyazBnUVl3S0NSQzZDaU1kME56WFZVWUFPX3NDTHZ1RVRyT1BmVWxQVmpVVGxWNUNRbHFIT1ZQWFNmOWo0UzVhZ0lDVVdRWUZSMkY0Nklyb0c3a0x6ZzJrMUN6UXNBMXp6ZWVJR281dElVaG9hSUx3aTNSY19fTE9KdEo1SGEzT09lTXB1V2pQWEVwYUtGLW1jT3hhOWdEQnZXU3JCc1UySHlhclBYNWc4RUpMb2lwTlNndWZxM2JVdzhCRXRIRzlUVmtSQXEwNnctb1U1ZmM3amltdGJVWlA3SnVfSXV3LWF6WjhveDJ5d255ZHFyUks0cHExTVV2MHlOU24xY0pOaWRIdHUwb3MycDd6eFdRWVNGN212U2I1S0dnRmFZdy1xckNqVHNtN3kyOXc5VEpMM3BXd0tMWkVqVnQwejBjY0lNcF9DeHpkNHhzZ0RiUTZpMi1Bc2dvajMteE5Vc2JvYU9kRDVVcWtCeXMtS19aZ1NLazFuWnRoODhoSGlBLUtiQ3UxRkJBU2NoRE5OOExwdkk5aU9hTjZUQS1ERkZ6YTJ1WlFuTThlYVVEc2NLS3hLTmVUWGpjV3VXd3lxNEpoUFBHS25tOHMyQ2NIb2E4cGNnX2FYRVFyMjRkQi14a2lHQS1xUU1nUklNdzBoQTNVelprOWFQa09SMXNETldXUzF4TmJsOWZ0VHNXMTVoZFQ2MlBpTllWQnMyVlp3MjRyb000cjEtU1N0cmFXVTgtbWZfVFc1YXMxZ1JoVlo3VmxXZjdmZUlBMDdudWI3YzRXdlJJYXhyOGJZSmlkOVNKQkRUT0p4UXVBcEVzTWpuSGpIdVpIYnZSUk1tRkgwV3Q3dkZBTkhtTnNzZG1pdmtWYVk4R240WjdSMVlZbzViUDZHVFJLTHZJRWRaaWFjUkNCTncwT0NPSmY5UE5SNjk2US1aeV84OGU5VkhzVkk3bUttZmx6aFJ3cW8zdVZfT3R1V3UxRXRGY0VOS2ZsNTFBODh1clFsMm1rYkZFVEFxaVlpNlROeHJ4a0RRVTVQcWxyZ1M2aERqT0V5aXd6WVdXSzhudzdXakVjeWdQUWZHX2Zwem1Na25ncHMteGxoM2xaZ2Q4a3FzRkdTUE9vOWp4bk1MZmYyNllrS01tVXo4dlRhNElieFc4UXNEbHA1TzlvNkk5YnZaR25LcjdDUW1Wckp1d1QxNXdHODhTbG1weW0zSGVFSkJuTWFraTdRNHFnazVCX3pkTkFEbXRDRTluN1V1UjZITFZLRjJKWmh6dVlweHFBdlRFVF9CSmxER3FENUFSUktoSklkcjJ5Mjc2b1N3RG0xMjBUWHBjQTdFY253YzdwMkY3bm5INTVuczZSeG50M19wVGNESE1jenVVM0Voc1BnMlh3RFI5aVNDblQ5WVRhLUJlbUZCNlVrRkRmZDNqRVRwUDN3OG9EaWRTZ3FnN05rZEpqSVZmWW9HMF9ZVGdFY1ROYnJOYndQanBJUjZJemlNaDNzM3c3WTdtdmxES2tIZ3ZCU0Y5MGxHNl9aQmthZlZPRTIybVZabVhXWFUzdldVOWJ1bkRuNkRZVDNfQ0Q2WkZIdHVMV3M4UFdpSV8tUzYtQUZrV21HQnpfN3Q0eVhyd29SX1psd3J1bXJpYnRZVEFtM1VaS3FfSjk5bDJIWkdoWTB0SmMycjJZNDd2aFhUb1pQU2U0b3lNUjZGTmlDV1J4NXFqQjVzRzZHZU82QThfVlhELXdRZ3hiMUo1TUJhTS14WGg3Yy03dGxwWWpqRGVWUzBS)
+        xcode: latest #13.0 #12.4
+        cocoapods: default
+      triggering:
+        events:
+          - push
+          - tag
+          - pull_request
+        branch_patterns:
+          - pattern: 'master'
+            include: true
+            source: true
+      scripts:
+        - name: Install pods
+          script: |
+            pod install
+        - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
+          script: |
+            keychain initialize
+        - name: Fetch signing files
+          script: |
+            app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
+        - name: Use system default keychain
+          script: |
+            keychain add-certificates
+        - name: Set up code signing settings on Xcode project
+          script: |
+            xcode-project use-profiles
+        - name: Increment build number
+          script: |
+            #!/bin/sh
+            set -ex
+            agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APP_ID") + 1))
+        - name: Build ipa for distribution
+          script: |
+            xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
+      artifacts:
+        - build/ios/ipa/*.ipa
+        - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+      publishing:
+        email:
+            recipients:
+              - rajavikramsingh27@gmail.com
+            notify:
+              success: true
+              failure: true
+        slack:
+            channel: '#builds-debug'
+            notify_on_build_start: true    # To receive a notification when a build starts
+            notify:
+              success: true               # To not receive a notification when a build succeeds
+              failure: true
+        app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution
+          apple_id: amrinder221734@gmail.com
+          password: Encrypted(Z0FBQUFBQmcwWThDSFVHSl85VWtSSEh4TE1OWDE0MHBsakRUcW5tTHM1TUs2dDMzaHZ3QW9NZXBmMTNROU5GUFAzZVlvaU5mVTR2UE1Sdkp5WVB2RHhpSVI0OWpSTnVSTWJIbzQwMFphOWs2UDc5S3VfYXpHdGM9)
+
